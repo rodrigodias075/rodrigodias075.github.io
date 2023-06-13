@@ -11,6 +11,6 @@ naoBtn.addEventListener("mousemove", function() { // function para funcionar o c
 });
 
 simBtn.addEventListener('click', () => {
-    const audio = new Audio('/audio.mp4'); 
+    const audio = new Audio('C:\Users\ALUNO\Desktop\QUA.315.030\question\audio.mp4'); 
     audio.play();
 });
