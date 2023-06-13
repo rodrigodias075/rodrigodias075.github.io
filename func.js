@@ -10,7 +10,10 @@ naoBtn.addEventListener("mousemove", function() {
     naoBtn.style.transform = `translate(${newX}px, ${newY}px)`;
 });
 
-simBtn.addEventListener('click', () => {
-    const audio = new Audio('C:/Users/ALUNO/Desktop/QUA.315.030/question/audio.mp4');
-    audio.autoplay = true;
+
+const audio = new Audio("/audio.mp4");
+
+simBtn.addEventListener("click", function() {
+    audio.play();
 });
+
