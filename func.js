@@ -11,9 +11,6 @@ naoBtn.addEventListener("mousemove", function() {
 });
 
 simBtn.addEventListener('click', () => {
-    resposta.textContent = "Áudio está sendo reproduzido...";
-
-    const audio = new Audio();
-    audio.src = 'C:/Users/ALUNO/Desktop/QUA.315.030/question/audio.mp4';
-    audio.play();
+    const audio = new Audio('C:/Users/ALUNO/Desktop/QUA.315.030/question/audio.mp4');
+    audio.autoplay = true;
 });
