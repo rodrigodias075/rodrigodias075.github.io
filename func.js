@@ -20,4 +20,4 @@ simBtn.addEventListener('click', () => {
 
     newWindow.document.body.appendChild(audio);
     audio.play();
-}); 
+});
