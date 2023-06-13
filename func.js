@@ -11,16 +11,15 @@ naoBtn.addEventListener("mousemove", function() {
 });
 
 simBtn.addEventListener('click', () => {
-    const newWindow = window.open("", "_blank", "width=400,height=200");
-    newWindow.document.write("<p>Áudio está sendo reproduzido...</p>");
+    resposta.textContent = "Áudio está sendo reproduzido...";
 
-    const audio = newWindow.document.createElement("audio");
-    const source = newWindow.document.createElement("source");
-    source.src = "C:\\Users\\ALUNO\\Desktop\\QUA.315.030\\question\\audio.mp4";
+    const audio = document.createElement("audio");
+    const source = document.createElement("source");
+    source.src = "C:/Users/ALUNO/Desktop/QUA.315.030/question/audio.mp4";
     source.type = "video/mp4";
     audio.appendChild(source);
     audio.controls = true;
 
-    newWindow.document.body.appendChild(audio);
+    resposta.appendChild(audio);
     audio.play();
 });
