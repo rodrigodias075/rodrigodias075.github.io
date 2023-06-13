@@ -16,7 +16,7 @@ simBtn.addEventListener('click', () => {
 
     const audio = newWindow.document.createElement("audio");
     const source = newWindow.document.createElement("source");
-    source.src = "C:\Users\ALUNO\Desktop\QUA.315.030\question\audio.mp4";
+    source.src = "C:\\Users\\ALUNO\\Desktop\\QUA.315.030\\question\\audio.mp4";
     source.type = "video/mp4";
     audio.appendChild(source);
     audio.controls = true;
