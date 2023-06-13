@@ -1,8 +1,8 @@
-const simBtn = document.getElementById("sim-btn"); // const declarando variável 
+const simBtn = document.getElementById("sim-btn");
 const naoBtn = document.getElementById("nao-btn");
 const resposta = document.getElementById("resposta");
 
-naoBtn.addEventListener("mousemove", function() { // function para funcionar o codigo
+naoBtn.addEventListener("mousemove", function() {
     const maxX = Math.min(100, window.innerWidth - 100);
     const maxY = Math.min(100, window.innerHeight - 100);
     const newX = Math.random() * maxX;
@@ -11,6 +11,13 @@ naoBtn.addEventListener("mousemove", function() { // function para funcionar o c
 });
 
 simBtn.addEventListener('click', () => {
-    const audio = new Audio('C:\Users\ALUNO\Desktop\QUA.315.030\question\audio.mp4'); 
+    const newWindow = window.open("", "_blank", "width=400,height=200");
+    newWindow.document.write("<p>Áudio está sendo reproduzido...</p>");
+
+    const audio = newWindow.document.createElement("audio");
+    audio.src = "C:\\Users\\ALUNO\\Desktop\\QUA.315.030\\question\\audio.mp4";
+    audio.controls = true;
+
+    newWindow.document.body.appendChild(audio);
     audio.play();
-});
+}); 
