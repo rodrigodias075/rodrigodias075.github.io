@@ -1,0 +1,40 @@
+    
+    .question {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    .message {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    .buttons {
+    display: flex;
+    justify-content: center;
+    }
+    
+    button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #c71585;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    }
+    
+    #no-btn:hover {
+    position: absolute;
+    left: calc(50% + 50px);
+    top: calc(50% + 50px);
+    }
